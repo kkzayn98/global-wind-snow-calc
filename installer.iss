@@ -1,0 +1,6 @@
+#define MyAppName "全球风压雪压计算评估工具"
+#define MyAppVersion "1.0.0"
+#define MyAppPublisher "浙江中南新能源有限公司"
+#define MyAppAuthor "技术部 董子凌"
+#define MyAppExeName "WindSnowCalc.exe"
+#define MyAppExeNameZh "全球风压雪压计算评估工具.exe"

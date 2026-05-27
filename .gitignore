@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# PyInstaller
+build/
+dist/
+*.spec
+!WindSnowCalc.spec
+
+# Release output
+release/
+
+# Node (map rebuild in scripts/)
+scripts/node_modules/
+scripts/package-lock.json
+
+# OS
+.DS_Store
+Thumbs.db
