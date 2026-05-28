@@ -10,6 +10,7 @@ block_cipher = None
 
 datas = [
     ("index.html", "."),
+    ("assets/app.ico", "assets"),
     ("data/cities.js", "data"),
     ("data/global.js", "data"),
     ("data/meta.js", "data"),

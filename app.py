@@ -25,6 +25,11 @@ def app_root() -> str:
 ROOT = app_root()
 
 
+def icon_path():
+    path = os.path.join(ROOT, "assets", "app.ico")
+    return path if os.path.isfile(path) else None
+
+
 def find_free_port(start: int = DEFAULT_PORT) -> int:
     for port in range(start, start + 20):
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
@@ -68,7 +73,11 @@ def main() -> None:
         height=820,
         min_size=(900, 640),
     )
-    webview.start()
+    start_kw: dict = {}
+    icon = icon_path()
+    if icon:
+        start_kw["icon"] = icon
+    webview.start(**start_kw)
 
 
 if __name__ == "__main__":
